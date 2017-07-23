@@ -1,0 +1,29 @@
+    <div class="container">
+        <h1 class="login-text"><span class="fa fa-sign-in"></span> Login Page</h1>
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form name="login-form" class="login-form form-signin" ng-submit="login()">
+                <div class="form-group row">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="email" class="form-control" id="email" name="email" ng-model="user.username" placeholder="Email address" required autofocus/>
+                </div>
+                <div class="form-group row">
+                    <input type="password" class="form-control" placeholder="Password" id="pass" ng-model="user.password" required/>
+                </div>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <div class="form-group row">
+                    <button type="submit" value="check" class="btn btn-lg btn-primary btn-block btn-signin" ng-disabled="disabled">Submit</button>
+                </div>
+            </form>
+             <a href="/#/login" class="forgot-password">
+                Forgot the password?
+            </a>
+            </br>
+            <p style="padding-top:10px;"><a href="/#/register">Need an account?</a></p>
+        </div>
+    </div>
